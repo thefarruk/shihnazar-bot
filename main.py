@@ -429,4 +429,12 @@ def main():
 if __name__ == "__main__":
     main()
 
+def run_flask():
+    app.run(host="0.0.0.0", port=10000)
+
+if __name__ == "__main__":
+    threading.Thread(target=run_flask).start()
+    # здесь запускается твой бот
+    main()
+
 
