@@ -1,6 +1,9 @@
 import time
 import json
 import requests
+import os
+TOKEN = os.getenv("TOKEN")
+
 
 TOKEN = "7532027868:AAGfw7-QvazuId3r_9TzrJLmho5_jomyqg0"  # <-- сюда вставь токен Бота Shihnazar Alymov
 BASE_URL = f"https://api.telegram.org/bot{TOKEN}"
@@ -416,3 +419,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
